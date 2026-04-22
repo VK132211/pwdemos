@@ -62,3 +62,24 @@ tag[attribute=value] or [attribute=value]
 tag.class[attribute=value] .class[attribute=value]
 ```
 
+### xpath
+
+* absolute
+* relative
+
+```
+  * /html
+  * /html/head
+  * /html/body/div/h1
+  * /html/body/div/div[1]
+  * /html/body/div/div/p[@id='para2' and @class='sub']
+  * /body/div/*[1]
+  * /body/div/*[last()]
+  * //p[ends-with(@id,'a2')]
+  * //p[starts-with(@id,'par')]
+  * //p[contains(@class,'ma')]
+  * //p[@class='main' and @id='para1']
+  * //p[@class='main' and not(@id='para2')]
+  * //p[@id='para1']/following-sibling::p[1]
+```
+
