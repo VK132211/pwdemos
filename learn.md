@@ -81,5 +81,12 @@ tag.class[attribute=value] .class[attribute=value]
   * //p[@class='main' and @id='para1']
   * //p[@class='main' and not(@id='para2')]
   * //p[@id='para1']/following-sibling::p[1]
+  * //p[@id='para1']/self::p
+  * //p[@id='para1']/parent::*
+  * //p[@id='para1']/ancestor::*
+  * //p[@id='para1']/descendant::*
+  * //p[@id='para1']/following::*
+  * //p[@id='para1']/preceding::*
+  * //p[@id='para1']/following-sibling::p
 ```
 
