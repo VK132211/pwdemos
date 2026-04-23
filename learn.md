@@ -90,3 +90,18 @@ tag.class[attribute=value] .class[attribute=value]
   * //p[@id='para1']/following-sibling::p
 ```
 
+## shadow dom
+```page.locator('css=div#shadow-host').shadowRoot().locator('css=span')
+page.locator('css=div#shadow-host').evaluateHandle(el => el.shadowRoot).locator('css=span')
+```
+## browser contexts
+```
+const context = await browser.newContext();
+const page = await context.newPage();
+```
+## cookies
+```
+await context.addCookies([{ name: 'cookie-name', value: 'cookie-value', domain: 'example.com' }]);
+const cookies = await context.cookies();
+await context.clearCookies();
+```
